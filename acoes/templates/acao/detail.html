@@ -1,0 +1,7 @@
+<h1>{{ filme.nome_do_filme }}</h1>
+<ul>
+{% for choice in filme.choice_set.all %}
+    <li>{{ choice.choice_text }}</li>
+{% endfor %}
+</ul>
+

@@ -1,0 +1,10 @@
+{% if lista_de_hq %}
+
+    {% for hq in lista_de_hq %}
+        <h1>{{ hq.nome_da_hq }} {{ hq.data_publicada_da_hq }} {{ hq.genero_da_hq }} {{ hq.numero_da_hq }}
+            {{ hq.editora_da_hq }} {{ hq.personagens_da_hq }} {{ hq.quantidade_de_paginas }} </h1>
+    {% endfor %}
+
+{% else %}
+    <p>Nenhuma HQ Informada.</p>
+{% endif %}

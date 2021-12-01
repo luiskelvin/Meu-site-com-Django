@@ -1,0 +1,8 @@
+{% if lista_de_serie %}
+    {% for serie in lista_de_serie %}
+        <h1>{{ serie.nome_da_serie }} {{ serie.autor_da_serie }} {{ serie.data_publicada_da_serie }}
+            {{ serie.genero_da_serie }} {{ serie.classificacao_da_serie }} {{ serie.elenco_da_serie }} </h1>
+    {% endfor %}
+{% else %}
+    <p>Nenhum seriado informado.</p>
+{% endif %}

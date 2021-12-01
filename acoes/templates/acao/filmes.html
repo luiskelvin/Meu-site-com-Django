@@ -1,0 +1,10 @@
+{% if lista_filmes %}
+
+    {% for filme in lista_filmes %}
+        <h1>{{ filme.nome_do_filme }} {{ filme.autor_do_filme }}
+            {{ filme.data_publicada_do_filme }} {{ filme.genero_do_filme }}</h1>
+    {% endfor %}
+
+{% else %}
+    <p>Nenhum filme informado.</p>
+{% endif %}

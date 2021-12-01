@@ -1,0 +1,7 @@
+{% if listas_de_noticia %}
+    {% for informacao in listas_de_noticia %}
+        <h1>{{ informacao.titulo_da_noticia }} {{ informacao.noticias }} </h1>
+    {% endfor %}
+{% else %}
+    <p>Nenhuma noticia informada.</p>
+{% endif %}
